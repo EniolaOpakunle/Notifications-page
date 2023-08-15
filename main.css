@@ -28,8 +28,16 @@ button{
     
     padding-top: 10px;
 }
-#unreadInbox1, #unreadInbox2, #unreadInbox3{
+.unreadInbox{
     background-color: hsl(210, 60%, 98%);
+}
+.unreadInbox p:first-of-type::after{
+    content:"";
+    background-color: hsl(1, 90%, 64%);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
 }
 .name{
     font-weight: 800;
@@ -41,13 +49,6 @@ button{
 .grey-highlight{
     font-weight: 500;
     color: hsl(219, 12%, 42%);
-}
-.notification_dot{
-    background-color: hsl(1, 90%, 64%);
-    width: 10px !important;
-    height: 10px !important;
-    position: absolute;
-    /* display: none; */
 }
 .notification-no{
     background-color: hsl(219, 85%, 26%);
@@ -96,11 +97,18 @@ button{
         color: hsl(219, 14%, 63%);
     }
     .inbox{
-        
         padding-top: 10px;
     }
-    #unreadInbox1, #unreadInbox2, #unreadInbox3{
+    .unreadInbox{
         background-color: hsl(210, 60%, 98%);
+    }
+    .unreadInbox p:first-of-type::after{
+        content:"";
+        background-color: hsl(1, 90%, 64%);
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
     }
     .name{
         font-weight: 800;
@@ -112,13 +120,6 @@ button{
     .grey-highlight{
         font-weight: 500;
         color: hsl(219, 12%, 42%);
-    }
-    .notification_dot{
-        background-color: hsl(1, 90%, 64%);
-        width: 10px !important;
-        height: 10px !important;
-        position: absolute;
-        /* display: none; */
     }
     .notification-no{
         background-color: hsl(219, 85%, 26%);
